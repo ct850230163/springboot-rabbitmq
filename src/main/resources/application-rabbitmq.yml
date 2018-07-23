@@ -1,0 +1,10 @@
+rabbitproper:
+  address: ${app.rabbitmq.address}
+  username: ${app.rabbitmq.username}
+  password: ${app.rabbitmq.password}
+  exchange: rabbitmq.direct #交换机名称
+  durable: false
+  exclusive: false
+  auto-delete: false
+  virtualhost: /
+  queuename: queue-${app.project} #消息队列名称
